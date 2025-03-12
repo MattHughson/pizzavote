@@ -1,6 +1,7 @@
 import { Pizza } from "lucide-react"
 
-export default function Logo() {
+export default function Logo(props) {
+  console.log("blok logo", props)
   return (
     <div className="flex items-center gap-2">
       <div className="bg-primary p-2 rounded-lg">
