@@ -1,7 +1,8 @@
 import { Pizza } from "lucide-react"
+/* eslint-disable react/no-unescaped-entities */
 
-export default function Logo(props) {
-  console.log("blok logo", props)
+export default function Logo() {
+  console.log("blok logo", )
   return (
     <div className="flex items-center gap-2">
       <div className="bg-primary p-2 rounded-lg">

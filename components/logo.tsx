@@ -1,4 +1,5 @@
 import { Pizza } from "lucide-react"
+/* eslint-disable react/no-unescaped-entities */
 
 export default function Logo() {
   return (

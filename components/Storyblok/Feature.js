@@ -1,5 +1,5 @@
 import { storyblokEditable } from "@storyblok/react";
-import { Pi } from "lucide-react";
+
 import PizzaVoteSection from "../pizza-vote-section";
 
 const Feature = ({ blok }) => (

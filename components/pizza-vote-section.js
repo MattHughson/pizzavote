@@ -1,11 +1,11 @@
 "use client";
-
-import { useState, useMemo } from "react";
+/* eslint-disable react/no-unescaped-entities */
+import { useState,  } from "react";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ThumbsUp } from "lucide-react";
 
-export default function PizzaVoteSection({ pizza, story = {} }) {
+export default function PizzaVoteSection({ pizza,  }) {
   // Initialize pizza options with parsed votes, defaulting to 0 if not available
   const [pizzaOptions, setPizzaOptions] = useState(
     pizza?.Restaurants?.map((p) => ({ ...p, votes: parseInt(p.votes, 10) || 0 })) || []
@@ -142,14 +142,14 @@ export default function PizzaVoteSection({ pizza, story = {} }) {
 
     try {
       const response = await fetch(
-        "https://mapi.storyblok.com/v1/spaces/289289/stories/498132187", // Storyblok API endpoint
+        "https://mapi.storyblok.com/v1/spaces/289289/stories/498132187", 
         {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
-            Authorization: "qjVcttbyrWq3mldaoYgHfQtt-217911-nT-aDiM8w81PjG32Re9g", // Replace with your token
+            Authorization: "qjVcttbyrWq3mldaoYgHfQtt-217911-nT-aDiM8w81PjG32Re9g", 
           },
-          body: JSON.stringify(updatedStory), // Send the updated story with new votes
+          body: JSON.stringify(updatedStory), 
         }
       );
 
@@ -161,10 +161,10 @@ export default function PizzaVoteSection({ pizza, story = {} }) {
     }
   };
 
-  // Memoized function to get the pizza with the most votes
-  const mostVoted = useMemo(() => {
-    return [...pizzaOptions].sort((a, b) => b.votes - a.votes)[0];
-  }, [pizzaOptions]);
+
+  // const mostVoted = useMemo(() => {
+  //   return [...pizzaOptions].sort((a, b) => b.votes - a.votes)[0];
+  // }, [pizzaOptions]);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

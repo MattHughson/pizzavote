@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import PizzaVoteSection from "../components/pizza-vote-section"
-import Logo from "../components/logo"
+
 import {
   useStoryblokState,
   getStoryblokApi,

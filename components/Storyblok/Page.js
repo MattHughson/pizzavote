@@ -1,5 +1,5 @@
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
-import Logo from "../logo"
+
 import Image from 'next/image'
 
 const Page = ({ blok }) => (
